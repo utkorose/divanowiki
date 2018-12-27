@@ -10,7 +10,10 @@
     <meta name="yandex-verification" content="5ed20c9e68624211" />
 
 
-    <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+    <title>
+      {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
+      {% else %}{{ site.title | escape }}{% endif %}
+    </title>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
