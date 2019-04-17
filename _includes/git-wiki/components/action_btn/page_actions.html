@@ -5,8 +5,7 @@
     <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/wiki/{{url | remove: '.html' | append: ''}}/_history">История</a></span>
     <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/wiki/{{url | remove: '.html' | append: '.md'}}/">Исходник</a></span>
     {% else %}
-    <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/new/{{site.git_branch}}?filename={{ site.wiki_folder | default: 'wiki' }}/">Add
-            new</a></span>
+    <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/new/{{site.git_branch}}?filename={{ site.wiki_folder | default: 'wiki' }}/">Добавить новый</a></span>
     <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/edit/{{site.git_branch}}/{{page.path}}">Редактировать</a></span>
     <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/delete/{{site.git_branch}}/{{page.path}}">Удалить</a></span>
     <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/commits/{{site.git_branch}}/{{page.path}}">История</a></span>
@@ -17,12 +16,12 @@
     {% if site.use_prose_io %}
     <br>
     Prose.io:
-    <span class="tools-element"><a target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/new/{{site.git_branch}}/{{ site.wiki_folder | default: 'wiki' }}">Add
-            new</a></span>
-    <span class="tools-element"><a target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/edit/{{site.git_branch}}/{{page.path}}">Edit</a></span>
+    <span class="tools-element"><a target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/new/{{site.git_branch}}/{{ site.wiki_folder | default: 'wiki' }}">Добавить
+            новый</a></span>
+    <span class="tools-element"><a target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/edit/{{site.git_branch}}/{{page.path}}">Редактировать</a></span>
     {% if site.blog_feature %}
-    <span class="tools-element"><a target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/new/{{site.git_branch}}/_posts/">Add
-            new post</a></span>
+    <span class="tools-element"><a target="_blank" href="http://prose.io/#{{site.github.repository_nwo}}/new/{{site.git_branch}}/_posts/">Добавить
+            новый пост</a></span>
     {% endif %}
     {% endif %}
     {% endif %}
